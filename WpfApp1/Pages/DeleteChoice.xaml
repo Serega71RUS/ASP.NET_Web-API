@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.Pages.DeleteChoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Pages"
+        mc:Ignorable="d"
+        Title="DeleteChoice" Height="227.093" Width="419.507" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Внимание!" HorizontalAlignment="Left" Margin="179,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="При удалении марки автомобиля, также удалятся все модели" HorizontalAlignment="Left" Margin="22,53,0,0" VerticalAlignment="Top" Height="28" Width="370"/>
+        <Label Content="и их комплектации!" HorizontalAlignment="Left" Margin="151,81,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="DeleteManufButton" Content="Удалить марку" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="DeleteManufClick"/>
+        <Button x:Name="DeleteModelButton" Content="Удалить модель" HorizontalAlignment="Left" Margin="167,161,0,0" VerticalAlignment="Top" Width="102" Height="27" Click="DeleteModelClick"/>
+        <Button x:Name="DeleteChoiceCancelButton" Content="Отмена" HorizontalAlignment="Left" Margin="326,161,0,0" VerticalAlignment="Top" Width="77" Height="27" Click="DeleteChoiceCancelClick"/>
+
+    </Grid>
+</Window>

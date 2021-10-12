@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.Pages.AddComplect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Pages"
+        mc:Ignorable="d"
+        Title="AddComplect" Height="346" Width="412.8" ResizeMode="NoResize">
+    <Grid>
+        <ComboBox x:Name="ComboMan" HorizontalAlignment="Left" Margin="39,67,0,0" VerticalAlignment="Top" Width="131" SelectionChanged="manSelect"/>
+        <ComboBox x:Name="ComboModel" HorizontalAlignment="Left" Margin="226,67,0,0" VerticalAlignment="Top" Width="146" SelectionChanged="ModelSelect"/>
+        <Label Content="Марка авто" HorizontalAlignment="Left" Margin="60,28,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.245,1.055"/>
+        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="245,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="Объем двигателя" HorizontalAlignment="Left" Margin="39,133,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кол-во л.с." HorizontalAlignment="Left" Margin="39,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textboxVolume" HorizontalAlignment="Left" Height="23" Margin="226,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxPower" HorizontalAlignment="Left" Height="23" Margin="226,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Добавить комплектацию" HorizontalAlignment="Left" Margin="119,250,0,0" VerticalAlignment="Top" Width="155" Height="32" Click="AddComplectClick"/>
+
+    </Grid>
+</Window>

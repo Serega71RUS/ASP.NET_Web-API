@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.Pages.DeleteCar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Pages"
+        mc:Ignorable="d"
+        Title="DeleteCar" Height="171.6" Width="312.8" ResizeMode="NoResize" Activated="DeleteCarWindowActive">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="64*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ComboMan" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="manSelect"/>
+        <Label Content="Марка авто" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.797,-1.094"/>
+        <Button x:Name="DeleteCarButton" Content="Удалить" HorizontalAlignment="Left" Margin="176,99,0,0" VerticalAlignment="Top" Width="120" Height="33" Click="DeleteCarClick" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="ComboModel" HorizontalAlignment="Left" Margin="171,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ModelSelect" Grid.ColumnSpan="2"/>
+        <Label Content="Модель авто" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.797,-1.094" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
